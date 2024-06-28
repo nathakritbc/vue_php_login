@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  box-sizing: 0;
+}
+
+@font-face {
+  font-family: "Prompt";
+  src: url("./assets/font/Prompt/Prompt-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Futura";
+  src: url("./assets/font/Futura/Futura-Regular/Futura-Regular.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SukhumvitSet";
+  src: url("./assets/font/SukhumvitSet/SukhumvitSet-Text.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+ 
+
+:root {
+  --font-family: "Prompt";
+}
+
+/* Override font-family for Thai language */
+html[lang="th"] {
+  --font-family: "Prompt";
+}
+
+/* Apply font-family to various elements */
+html,
+body,
+span,
+div,
+a,
+h1,
+h2,
+h3,
+h4,
+b,
+th,
+td,
+.topic,
+.display-4,
+.display-3,
+.display-2,
+.display-1,
+.headline,
+.title,
+.subheading,
+.body-2,
+.body-1,
+.caption {
+  font-family: var(--font-family) !important;
+}
+
+html,
+body,
+/* span, */
+b,
+th {
+  font-size: 16px !important;
+}
+ 
